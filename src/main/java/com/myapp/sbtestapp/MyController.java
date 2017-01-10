@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
 
 	@RequestMapping("/test")
-	public String testController(){
-		return "test";
+	public MyDTO testController(){
+		
+		MyDTO myDTO = new MyDTO();
+		myDTO.setName("tes123");
+		return myDTO;
 	}
 	
 	
