@@ -1,16 +1,20 @@
 package com.myapp.sbtestapp;
 
+import javax.annotation.Resource;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MyController {
 
+	@Resource(name="myDTO")
+	private MyDTO myDTO;
+	
 	@RequestMapping("/test")
 	public MyDTO testController(){
 		
-		MyDTO myDTO = new MyDTO();
-		myDTO.setName("tes123");
+		myDTO.setName("set to dto");
 		return myDTO;
 	}
 	
