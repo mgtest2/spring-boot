@@ -8,7 +8,13 @@ public class MyDTO {
 
 	@Value("${spring.application.prop}")
 	private String springProp;
+	
+	@Value("${spring.application.external.prop}")
+	private String externalSprinProp;
+	
 	private String name;
+	private String springContext;
+	
 
 	public String getName() {
 		return name;
@@ -25,5 +31,24 @@ public class MyDTO {
 	public void setSpringProp(String springProp) {
 		this.springProp = springProp;
 	}
+
+	public String getSpringContext() {
+		return springContext;
+	}
+
+	public void setSpringContext(String springContext) {
+		this.springContext = springContext;
+	}
+
+	public String getExternalSprinProp() {
+		return externalSprinProp;
+	}
+
+	public void setExternalSprinProp(String externalSprinProp) {
+		this.externalSprinProp = externalSprinProp;
+	}
+	
+	
+	
 
 }

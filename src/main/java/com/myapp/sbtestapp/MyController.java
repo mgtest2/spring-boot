@@ -11,10 +11,14 @@ public class MyController {
 	@Resource(name="myDTO")
 	private MyDTO myDTO;
 	
+	@Resource(name="sbBean")
+	private SBBean sbBean;
+	
 	@RequestMapping("/test")
 	public MyDTO testController(){
 		
 		myDTO.setName("set to dto");
+		myDTO.setSpringContext(sbBean.getName());
 		return myDTO;
 	}
 	
