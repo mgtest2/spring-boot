@@ -1,3 +1,5 @@
+http://localhost:8080/test
+
 sudo docker build -t springboot .
 
 sudo docker run -p 8080:8080 -it --rm --name my-springboot springboot
