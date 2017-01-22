@@ -18,7 +18,7 @@ public class MyControllerTest {
 	public void test(){
 		
 		MyController controller = new MyController();
-		ReflectionTestUtils.setField(controller, "myDTO", new MyDTO()); 
+		//ReflectionTestUtils.setField(controller, "myDTO", new MyDTO()); 
 		SBBean sbBean = mock(SBBean.class);
 		when(sbBean.getName()).thenReturn("test");
 		ReflectionTestUtils.setField(controller, "sbBean", sbBean); 

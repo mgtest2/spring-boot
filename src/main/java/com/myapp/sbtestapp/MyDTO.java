@@ -6,10 +6,8 @@ import org.springframework.stereotype.Component;
 @Component("myDTO")
 public class MyDTO {
 
-	@Value("${spring.application.prop}")
 	private String springProp;
 	
-	@Value("${spring.application.external.prop}")
 	private String externalSprinProp;
 	
 	private String name;
