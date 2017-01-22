@@ -1,3 +1,6 @@
+$ java -Dspring.config.location=external.properties -jar target/springboot-testapp-0.0.1-SNAPSHOT.jar
+
+
 http://localhost:8080/test
 
 sudo docker build -t springboot .
